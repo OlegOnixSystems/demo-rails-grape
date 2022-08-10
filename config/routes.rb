@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  mount Public::API => '/'
+  mount Sessions::APIV1 => '/v1/sessions'
+  mount Sessions::APIV2 => '/v2/sessions'
+  mount Protected::API => '/protected'
 end

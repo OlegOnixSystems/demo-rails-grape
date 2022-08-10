@@ -1,5 +1,7 @@
 # README
 
+[Grape documentation](https://www.rubydoc.info/gems/grape)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

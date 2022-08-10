@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <title>Swagger UI</title>
+    <script src="/swagger_ui.js"></script>
+    <script src="/swagger_init.js"></script>
+    <link rel="stylesheet" media="screen" href="/swagger_ui.css"/>
+    <style>
+        .swagger-ui-wrap {
+            max-width: 80%;
+            min-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        new SwaggerInit('http://localhost:3000/public/swagger_doc', 'zkIW286P6M1IhmnQvFfUlkIomsIO5SJ4Ji2KIYjEuMZ37hoodjrdus7BvyYjr3SgiU54vSXWU0QCL8XUI4NLsQ==');
+      });
+    </script>
+</head>
+<body class='swagger-section'>
+<div id='header'>
+    <div class='swagger-ui-wrap'>
+        <a href='' id='logo'>
+            <span class='logo__title'>swagger</span>
+        </a>
+        <form id='api_selector'>
+            <div class='input'>
+                <!--
+                    http://localhost:3000/public/swagger_doc
+                    http://localhost:3000/v1/sessions/swagger_doc
+                    http://localhost:3000/v2/sessions/swagger_doc
+                    http://localhost:3000/protected/swagger_doc
+                -->
+                <input id='input_baseUrl' name='baseUrl' placeholder='http://localhost:3000' type='text'>
+            </div>
+            <div class='input'>
+                <input id='input_apiKey' name='apiKey' placeholder='token' type='text'>
+            </div>
+            <div id='auth_container'></div>
+            <div class='input'>
+                <a class='header__btn' data-sw-translate='' href='#' id='explore'>Explore</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class='swagger-ui-wrap' data-sw-translate='' id='message-bar'>&nbsp;</div>
+<div class='swagger-ui-wrap' id='swagger-ui-container'></div>
+</body>
+</html>
